@@ -1,1 +1,1 @@
-# r-ProyectoInfo2-Yudi
+# ProyectoInfo2-Yudi
