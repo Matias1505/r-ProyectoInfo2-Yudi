@@ -1,1 +1,1 @@
-# ProyectoInfo2-Yudi-Yamil
+# ProyectoInfo2-Colombo-Yudi
