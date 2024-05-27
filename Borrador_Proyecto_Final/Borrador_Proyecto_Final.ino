@@ -69,7 +69,7 @@ void loop() {
     delay(50);
   }
   //Gas propano y butano
-  if (MQ135 >= 400) {  //Valor mayor o igual a 400 propano o butano 
+  if (MQ135 >= 400) {  //Valor mayor o igual a 400 propano o butano. 
     Serial.print("Propano / butano");
   }
   //SENSOR DE SONIDO
