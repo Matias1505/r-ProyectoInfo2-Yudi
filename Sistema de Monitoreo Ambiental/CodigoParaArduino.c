@@ -11,25 +11,29 @@
 
 DHT dht(DHTPIN, DHTTYPE);
 
-void setup() {
+void setup()
+{
     Serial.begin(9600);
     dht.begin();
 
-    if (!SD.begin(SD_CS_PIN)) {
-        Serial.println("Error initializing SD card");
+    if (!SD.begin(SD_CS_PIN))
+    {
+        Serial.println("Error al inicializar la SD card");
         return;
     }
 }
 
-void loop() {
+void loop()
+{
     float temp = dht.readTemperature();
     float humidity = dht.readHumidity();
     int lightLevel = analogRead(LDR_PIN);
     int soundLevel = analogRead(SOUND_SENSOR_PIN);
     int airQuality = analogRead(MQ135_PIN);
 
-    if (isnan(temp) || isnan(humidity)) {
-        Serial.println("Failed to read from DHT sensor!");
+    if (isnan(temp) || isnan(humidity))
+    {
+        Serial.println("No se pudo leer desde el sensor DHT");
         return;
     }
 
@@ -42,12 +46,15 @@ void loop() {
     Serial.println(dataString);
 
     File dataFile = SD.open("data.txt", FILE_WRITE);
-    if (dataFile) {
+    if (dataFile)
+    {
         dataFile.println(dataString);
         dataFile.close();
-    } else {
-        Serial.println("Error opening data file");
+    }
+    else
+    {
+        Serial.println("Error al abrir el archivo de datos");
     }
 
-    delay(2000);  // Espera 2 segundos entre lecturas
+    delay(2000); // Espera 2 segundos entre lecturas
 }

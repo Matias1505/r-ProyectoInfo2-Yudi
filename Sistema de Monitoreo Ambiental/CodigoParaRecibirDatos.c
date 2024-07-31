@@ -2,19 +2,19 @@
 #include <stdlib.h>
 #include <libserialport.h>
 
-#define SERIAL_PORT "/dev/ttyACM0" // Cambiar
+#define SERIAL_PORT "/dev/ttyACM0" // ver el puerto serial
 #define BAUDRATE 9600
 
 void check_port(struct sp_port *port) {
     if (port == NULL) {
-        fprintf(stderr, "Error opening port\n");
+        fprintf(stderr, "Error al abrir el puerto\n");
         exit(EXIT_FAILURE);
     }
 }
 
 void check_error(enum sp_return result) {
     if (result != SP_OK) {
-        fprintf(stderr, "Serial port error: %d\n", result);
+        fprintf(stderr, "Error de puerto serie: %d\n", result);
         exit(EXIT_FAILURE);
     }
 }
@@ -33,7 +33,7 @@ int main() {
     result = sp_set_baudrate(port, BAUDRATE);
     check_error(result);
 
-    // Configura las demás opciones del puerto
+    // Configura las demás opciones del puerto (paridad, bits de datos, bits de parada)
     result = sp_set_bits(port, 8);
     check_error(result);
     result = sp_set_parity(port, SP_PARITY_NONE);
@@ -62,3 +62,5 @@ int main() {
 
     return 0;
 }
+
+ 
