@@ -1,0 +1,15 @@
+# ninja log v6
+22	1946	7531544860127293	ProyectoFinal2_autogen/timestamp	f8720b913f3162eb
+22	1946	7531544860127293	ProyectoFinal2_autogen/mocs_compilation.cpp	f8720b913f3162eb
+22	1946	7531544860127293	C:/Qt/ProyectoFinal2/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/ProyectoFinal2_autogen/timestamp	f8720b913f3162eb
+22	1946	7531544860127293	C:/Qt/ProyectoFinal2/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/ProyectoFinal2_autogen/mocs_compilation.cpp	f8720b913f3162eb
+1965	7277	7531544862335892	CMakeFiles/ProyectoFinal2.dir/ProyectoFinal2_autogen/mocs_compilation.cpp.obj	1a900f4e62827216
+1973	7412	7531544862411399	CMakeFiles/ProyectoFinal2.dir/main.cpp.obj	1bf8217695408a60
+55	1640	7531546747059058	ProyectoFinal2_autogen/timestamp	f8720b913f3162eb
+55	1640	7531546747059058	ProyectoFinal2_autogen/mocs_compilation.cpp	f8720b913f3162eb
+55	1640	7531546747059058	C:/Qt/ProyectoFinal2/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/ProyectoFinal2_autogen/timestamp	f8720b913f3162eb
+55	1640	7531546747059058	C:/Qt/ProyectoFinal2/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/ProyectoFinal2_autogen/mocs_compilation.cpp	f8720b913f3162eb
+1643	6272	7531546748432065	CMakeFiles/ProyectoFinal2.dir/ProyectoFinal2_autogen/mocs_compilation.cpp.obj	1a900f4e62827216
+1649	6394	7531546748490467	CMakeFiles/ProyectoFinal2.dir/main.cpp.obj	1bf8217695408a60
+1657	7291	7531546748574319	CMakeFiles/ProyectoFinal2.dir/mainwindow.cpp.obj	bf4183f31ca9df0e
+7293	7697	7531546804930523	ProyectoFinal2.exe	520e5564416f991a
